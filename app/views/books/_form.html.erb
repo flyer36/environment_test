@@ -18,6 +18,8 @@
     <%= form.text_field :author %>
     <%= form.label :price %>
     <%= form.text_field :price %>
+    <%= form.label :published_date %>
+    <%= form.date_select :published_date, :start_year => Date.current.year, :end_year => 1900 %>
   </div>
 
   <div class="actions">
